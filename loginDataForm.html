@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Data page</title>
+</head>
+<style>
+    *{
+        background-color: aqua;
+
+    }
+  body {
+      height: 50vh;
+      width: 100vw;
+      margin: 2px;
+      display:flex;
+      flex-direction: column;
+      font-family: fantasy;
+      align-items: center;
+  }
+  .login-container{
+      padding: 110px;
+      border-radius: 900px;
+      box-shadow: 20px 20px 10px lightgray;
+      background-color: cadetblue;
+      width: 60%;
+      margin:40px;
+  }
+  form {
+      display: flex;
+      flex-direction: column;
+  }
+    h1{text-align: center;
+        color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    }
+    label{
+        font-size: 18px;
+        margin-bottom: 15px;
+        font-family: fantasy;
+    }
+        input, textarea:{
+            border-color: black;
+            outline: lightgray;
+    }
+
+    </style>
+
+  <h1>Login Data Form</h1>
+  <body>
+  <div class="login-container">
+      <form class="login-form">
+          <label for="Enter your first name:">Enter your first name:</label>
+          <input type="text" id="Enter your first name:" name="firstname" placeholder="Enter your first name" required>
+          <label for="Enter your surname:">Enter your surname:</label>
+          <input type="text" id="Enter your surname:" name="surname" placeholder="Enter your surname" required>
+          <label for="Enter your lastname:">Enter your last name:</label>
+          <input type="text" id="Enter your lastname:" name="lastname;" placeholder="Enter your last name" required>
+          <label for="Your Gender:">Enter your Gender</label>
+          <input type="text" id="Your Gender:" name="gender;" placeholder="Enter your Gender" required>
+          <label for="Enter your email address:">Enter your email address:</label>
+          <input type="text" id="Enter your email address:" name="email address;" placeholder="Enter your email address" required>
+          <label for="Enter your D.O.B:">Enter your D.O.B:</label>
+          <input type="number" id="Enter your D.O.B:" name="D.O.B;" placeholder="Enter your D.O.B" required>
+          <label for="Registration number:">Registration number:</label>
+          <input type="text" id="Registration number:" name="Registration number;" placeholder="Registration number" required>
+          <label for="course name:">course name:</label>
+          <input type="text" id="course name:" name="course name;" placeholder="course name" required>
+          <label for="Year of study:">Year of study:</label>
+          <input type="text" id="Year of study:" name="Year of study;" placeholder="Year of study" required>
+          <label for="School name:">School name:</label>
+          <input type="text" id="School name:" name="School name;" placeholder="School name" required>
+          <label for="Department:">Department:</label>
+          <input type="text" id="Department:" name="Department;" placeholder="Department" required>
+
+
+
+      </form>
+  </div>
+  </body>
+</html>
