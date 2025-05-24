@@ -7,7 +7,7 @@
 </head>
 <style>
     *{
-        background-color: aqua;
+        background-color: darkgray;
 
     }
   body {
@@ -20,12 +20,12 @@
       align-items: center;
   }
   .login-container{
-      padding: 110px;
-      border-radius: 900px;
-      box-shadow: 20px 20px 10px lightgray;
-      background-color: cadetblue;
       width: 60%;
-      margin:40px;
+      margin:30px;
+      box-shadow: 10px 10px 20px grey;
+      border-radius: 80%;
+      background-color:lightgray;
+
   }
   form {
       display: flex;
@@ -36,29 +36,55 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size: 60px;
     }
+    h2{text-align:30px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;}
     label{
-        font-size: 18px;
-        margin-bottom: 15px;
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 30px;
+        margin-bottom: 30px;
         font-family: fantasy;
     }
-        input, textarea:{
-            border-color: black;
-            outline: lightgray;
-    }
+        input ,textarea{
+            width: 100%;
+            font-size: 15px;
+            font-weight: bold;
+            height:50px;
+            background-color: #EEE;
+            color: darkgrey;
+            border: 3px solid black;
+            box-shadow: 0 0 15px;
+            row-fill: 1px;
+            column-fill: 1px;
+        }
+            button.submit-btn{
+                background-color: white;
+                padding: 10px;
+                border:solid black;
+                cursor: pointer;
+                font-size: 20px;
+                color: black;
+            }
+            button.submit-btn:hover{
+                background-color:blueviolet;
+            }
 
     </style>
 
-  <h1>Login Data Form</h1>
+  <h1>STUDENT INFORMATION</h1>
+<h2>kindly fill out the form below : _</h2>
   <body>
   <div class="login-container">
       <form class="login-form">
-          <label for="Enter your first name:">Enter your first name:</label>
-          <input type="text" id="Enter your first name:" name="firstname" placeholder="Enter your first name" required>
-          <label for="Enter your surname:">Enter your surname:</label>
-          <input type="text" id="Enter your surname:" name="surname" placeholder="Enter your surname" required>
-          <label for="Enter your lastname:">Enter your last name:</label>
-          <input type="text" id="Enter your lastname:" name="lastname;" placeholder="Enter your last name" required>
-          <label for="Your Gender:">Enter your Gender</label>
+          <label for="Enter Your firstname:">Enter your firstname :</label>
+          <input type="text" id="Enter Your firstname:" name="firstname;" placeholder="Enter your firstname" required>
+          <label for="Enter Your surname:">Enter your surname :</label>
+          <input type="text" id="Enter Your surname:" name="surname;" placeholder="Enter your surname" required>
+          <label for="Enter Your lastname:">Enter your lastname :</label>
+          <input type="text" id="Enter Your lastname:" name="lastname;" placeholder="Enter your lastname" required>
+          <label for="Your Gender:">Enter your Gender :</label>
           <input type="text" id="Your Gender:" name="gender;" placeholder="Enter your Gender" required>
           <label for="Enter your email address:">Enter your email address:</label>
           <input type="text" id="Enter your email address:" name="email address;" placeholder="Enter your email address" required>
