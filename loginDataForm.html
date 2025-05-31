@@ -8,102 +8,135 @@
 <style>
     *{
         background-color: white;
-
     }
-  body {
-      height: 50vh;
-      width: 100vw;
-      margin: 2px;
-      display:flex;
-      flex-direction: column;
-      font-family: fantasy;
-      align-items: center;
-  }
-  .login-container{
-      width: 60%;
-      margin:30px;
-      box-shadow: 10px 10px 20px cream white;
-      border-radius: 80%;
-      background-color:white;
-
-  }
-  form {
-      display: flex;
-      flex-direction: column;
-  }
-    h1{text-align: center;
+    body {
+        height: 100vh;
+        width: 100vw;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        font-family: fantasy;
+        align-items: center;
+    }
+    .login-container{
+        width: 80%;
+        margin: 30px;
+        box-shadow: 10px 10px 20px rgba(0,0,0,0.1);
+        border-radius: 20px;
+        background-color: white;
+        padding: 20px;
+    }
+    form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+    .form-group {
+        display: flex;
+        flex-direction: column;
+    }
+    h1 {
+        text-align: center;
         color: black;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 60px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 60px;
+        margin-bottom: 10px;
     }
-    h2{text-align:30px;
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 40px;}
-    label{
-        font-size: 20px;
+    h2 {
+        text-align: center;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 30px;
+        margin-top: 0;
+    }
+    label {
+        font-size: 18px;
         font-weight: bold;
-        margin-top: 30px;
-        margin-bottom: 30px;
+        margin-top: 15px;
+        margin-bottom: 5px;
         font-family: fantasy;
     }
-        input ,textarea{
-            width: 100%;
-            font-size: 15px;
-            font-weight: bold;
-            height:50px;
-            background-color: #EEE;
-            color: darkgrey;
-            border: 3px solid black;
-            box-shadow: 0 0 15px;
-            row-fill: 1px;
-            column-fill: 1px;
-        }
-            button.submit-btn{
-                background-color: white;
-                padding: 10px;
-                border:solid black;
-                cursor: pointer;
-                font-size: 20px;
-                color: black;
-            }
-            button.submit-btn:hover{
-                background-color:blueviolet;
-            }
+    input, textarea {
+        width: 90%;
+        font-size: 15px;
+        border-radius: 25px;
+        font-weight: bold;
+        height: 40px;
+        background-color: #EEE;
+        color: darkgrey;
+        border: 2px solid black;
+        box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        padding: 5px 10px;
+    }
+    button.submit-btn {
+        background-color: white;
+        padding: 15px 30px;
+        border: 2px solid black;
+        cursor: pointer;
+        font-size: 20px;
+        color: black;
+        border-radius: 25px;
+        margin-top: 30px;
+        grid-column: span 2;
+        justify-self: center;
+    }
+    button.submit-btn:hover {
+        background-color:#3b5998;
+        color: white;
+    }
+</style>
 
-    </style>
-
-  <h1>STUDENT INFORMATION</h1>
-<h2>kindly fill out the form below : _</h2>
-  <body>
-  <div class="login-container">
-      <form class="login-form">
-          <label for="Enter Your firstname:">Enter your firstname :</label>
-          <input type="text" id="Enter Your firstname:" name="firstname;" placeholder="Enter your firstname" required>
-          <label for="Enter Your surname:">Enter your surname :</label>
-          <input type="text" id="Enter Your surname:" name="surname;" placeholder="Enter your surname" required>
-          <label for="Enter Your lastname:">Enter your lastname :</label>
-          <input type="text" id="Enter Your lastname:" name="lastname;" placeholder="Enter your lastname" required>
-          <label for="Your Gender:">Enter your Gender :</label>
-          <input type="text" id="Your Gender:" name="gender;" placeholder="Enter your Gender" required>
-          <label for="Enter your email address:">Enter your email address:</label>
-          <input type="text" id="Enter your email address:" name="email address;" placeholder="Enter your email address" required>
-          <label for="Enter your D.O.B:">Enter your D.O.B:</label>
-          <input type="number" id="Enter your D.O.B:" name="D.O.B;" placeholder="Enter your D.O.B" required>
-          <label for="Registration number:">Registration number:</label>
-          <input type="text" id="Registration number:" name="Registration number;" placeholder="Registration number" required>
-          <label for="course name:">course name:</label>
-          <input type="text" id="course name:" name="course name;" placeholder="course name" required>
-          <label for="Year of study:">Year of study:</label>
-          <input type="text" id="Year of study:" name="Year of study;" placeholder="Year of study" required>
-          <label for="School name:">School name:</label>
-          <input type="text" id="School name:" name="School name;" placeholder="School name" required>
-          <label for="Department:">Department:</label>
-          <input type="text" id="Department:" name="Department;" placeholder="Department" required>
-
-
-
-      </form>
-  </div>
-  </body>
+<body>
+<h1>STUDENT INFORMATION</h1>
+<h2>kindly fill out the form below:</h2>
+<div class="login-container">
+    <form class="login-form">
+        <div class="form-group">
+            <label for="Enter Your firstname:">Enter your firstname:</label>
+            <input type="text" id="Enter Your firstname:" name="firstname;" placeholder="Enter your firstname" required>
+        </div>
+        <div class="form-group">
+            <label for="Enter Your surname:">Enter your surname:</label>
+            <input type="text" id="Enter Your surname:" name="surname;" placeholder="Enter your surname" required>
+        </div>
+        <div class="form-group">
+            <label for="Enter Your lastname:">Enter your lastname:</label>
+            <input type="text" id="Enter Your lastname:" name="lastname;" placeholder="Enter your lastname" required>
+        </div>
+        <div class="form-group">
+            <label for="Your Gender:">Enter your Gender:</label>
+            <input type="text" id="Your Gender:" name="gender;" placeholder="Enter your Gender" required>
+        </div>
+        <div class="form-group">
+            <label for="Enter your email address:">Enter your email address:</label>
+            <input type="text" id="Enter your email address:" name="email address;" placeholder="Enter your email address" required>
+        </div>
+        <div class="form-group">
+            <label for="Enter your D.O.B:">Enter your D.O.B:</label>
+            <input type="date" id="Enter your D.O.B:" name="D.O.B;" placeholder="Enter your D.O.B" required>
+        </div>
+        <div class="form-group">
+            <label for="Registration number:">Registration number:</label>
+            <input type="text" id="Registration number:" name="Registration number;" placeholder="Registration number" required>
+        </div>
+        <div class="form-group">
+            <label for="course name:">course name:</label>
+            <input type="text" id="course name:" name="course name;" placeholder="course name" required>
+        </div>
+        <div class="form-group">
+            <label for="Year of study:">Year of study:</label>
+            <input type="text" id="Year of study:" name="Year of study;" placeholder="Year of study" required>
+        </div>
+        <div class="form-group">
+            <label for="School name:">School name:</label>
+            <input type="text" id="School name:" name="School name;" placeholder="School name" required>
+        </div>
+        <div class="form-group">
+            <label for="Department:">Department:</label>
+            <input type="text" id="Department:" name="Department;" placeholder="Department" required>
+        </div>
+        <button type="submit" class="submit-btn">SUBMIT</button>
+    </form>
+</div>
+</body>
 </html>
